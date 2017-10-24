@@ -5,19 +5,15 @@
 </p>
 
 <img src="<%= @the_image_url %>">
-
-<p>
-  3 days ago
-</p>
-
+</br>
 <a href="/photos" class="btn btn-default">
   Go back
 </a>
 
-<a href="/photos/542/edit" class="btn btn-default">
+<a href="/photos/<%= @the_id %>/edit" class="btn btn-default">
   Edit
 </a>
 
-<a href="/delete_photo/542" class="btn btn-default">
+<a href="/delete_photo/<%= @the_id %>" class="btn btn-default">
   Delete
 </a>

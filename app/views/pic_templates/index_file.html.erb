@@ -1,3 +1,23 @@
 <h1>
-    Hi
+    All Photos
 </h1>
+
+<a href = "https://photogram-golden-7-campbellit.c9users.io/photos/new">Add a new photo.</a>
+
+<%= @all_photos.each do |pic| %>
+    <div>
+    <img src="<%= pic.source %>">
+    <a href="/photos/<%= pic.id %>">
+       <br>Show Details</a>
+     <a href="/photos/<%= pic.id %>/edit">
+        Edit </a>
+      <a href="/delete_photo/<%= pic.id %>">
+          
+        Delete
+      </a>
+      </br>
+      </div>
+    
+    
+<% end %>
+
